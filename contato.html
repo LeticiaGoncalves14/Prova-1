@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - Espaço Jéssica Gontê</title>
+
+  <!-- Link para o CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="imagens\logo.png" alt="Logo Jéssica Gontê">
+    <p>Beleza, Bem-Estar e Autoestima</p>
+    <p>Procedimentos Faciais e Cursos | Parcerias e Publicidades</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="procedimentos.html">Procedimentos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Agende seu Horário</h2>
+      
+      <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      
+        <label for="contato">Contato:</label>
+        <input type="tel" id="contato" name="contato" maxlength="15" placeholder="(XX) XXXXX-XXXX" required oninput="formatPhone(event)">
+      
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+      
+        <button type="submit">Enviar</button>
+      
+        <div id="mensagem-sucesso">Enviado!</div>
+      </form>      
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>Endereço: Rua Rio Grande do Sul, 667B Vila Universal - Betim</p>
+    <p>
+      WhatsApp: <a href="https://wa.me/5531971564131" target="_blank">(31) 97156-4131</a> | 
+      Instagram: <a href="https://www.instagram.com/jessicagonte/" target="_blank">@jessicagonte</a>
+    </p>
+  </footer>
+
+  <script>
+    function formatPhone(event) {
+      let input = event.target;
+      let value = input.value.replace(/\D/g, ''); 
+      if (value.length <= 2) {
+        input.value = `(${value}`;
+      } else if (value.length <= 7) {
+        input.value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+      } else {
+        input.value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
+      }
+    }
+
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const formData = new FormData(this);
+
+      fetch('https://formsubmit.co/ajax/jessicagteixeira15@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success === 'true') {
+          document.getElementById('mensagem-sucesso').style.display = 'block';
+          this.reset();
+        } else {
+          alert('Erro ao enviar. Por favor, tente novamente.');
+        }
+      })
+      .catch(error => {
+        alert('Erro ao enviar. Por favor, tente novamente.');
+      });
+    });
+  </script>
+
+</body>
+</html>

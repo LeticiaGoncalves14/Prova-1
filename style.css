@@ -1,0 +1,445 @@
+/* Estilo do main */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fce4ec;
+  }
+  
+  /* Card apenas para 'Espaço' */
+  .sessao {
+    background-color: #fce4ec;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Seções normais sem card */
+  .normal {
+    margin: 2rem 0;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Títulos */
+  section h2 {
+    color: #c22f65;
+    margin-bottom: 1rem;
+  }
+  
+  /* Parágrafos */
+  section p {
+    font-size: 16px;
+    color: #c22f65;
+  }
+  .logo {
+    width: 10000px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a logo */
+}
+  
+  
+  /* Galeria */
+  .galeria {
+    position: relative;
+    max-width: 700px;
+    margin: 2rem auto 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .galeria img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  .galeria img.active {
+    display: block;
+  }
+  
+  /* Botões da galeria */
+  .seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(248, 187, 208, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .seta.esquerda {
+    left: 10px;
+  }
+  
+  .seta.direita {
+    right: 10px;
+  }
+  /* Seção de Procedimentos */
+section h2 {
+    color: #c22f65; /* Garante que o título dentro da seção seja rosa */
+}
+
+/* Títulos dos Cards */
+.procedimento h3 {
+    color: #c22f65; /* Título dos cards com cor específica */
+}
+/* Ajuste global para títulos */
+h1, h2, h3, h4, h5, h6, p {
+    color: #c22f65; /* Cor padrão para títulos */
+    margin-bottom: 1rem; /* Espaçamento consistente */
+    font-weight: bold; /* Deixa os títulos em destaque */
+}
+
+/* Estilo específico para cada título, se necessário */
+h1 {
+    font-size: 2rem; /* Tamanho maior para o título principal */
+    text-align: center; /* Centraliza os títulos principais */
+}
+
+h2 {
+    font-size: 1.75rem; /* Tamanho intermediário */
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem; /* Títulos menores */
+    text-align: center;
+}
+
+  
+  
+  /*procedimentos
+  /* Reset e configurações gerais */
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  
+  /* Corpo */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #f8bbd0;
+    padding: 2rem;
+    text-align: center;
+    color: #880e4f;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  
+  /* Navegação */
+  nav {
+    background-color: #f8bbd0;
+    text-align: center;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #880e4f;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  nav a:hover {
+    color: #c2185b;
+    border-bottom: 2px solid #c2185b;
+  }
+  
+  /* Main */
+  main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Seção de Procedimentos */
+
+
+section {
+    background-color: #fce4ec; /* Fundo rosa */
+    padding: 2rem 1rem; /* Espaçamento ajustado para cobrir a área */
+    border-radius: 20px; /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Centraliza e ajusta a largura */
+    max-width: 1200px; /* Limita o tamanho máximo */
+    margin: 2rem auto;
+    text-align: center;
+}
+
+/* Título da seção */
+section h2 {
+    color: #c22f65;
+    margin-bottom: 2rem;
+    font-size: 24px;
+}
+
+/* Cartões dos Procedimentos */
+.procedimento {
+    background-color: #fff0f5; /* Fundo dos cards */
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 20px; /* Ajuste nos cantos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%; /* Ajusta a largura dos cards */
+    max-width: 1000px; /* Tamanho máximo */
+}
+
+/* Imagens dos Procedimentos */
+.procedimento img {
+    width: 100%; /* Imagem ocupa 100% da largura do card */
+    border-radius: 10px;
+}
+
+/* Texto do Card */
+.procedimento h3 {
+    margin-top: 1rem;
+    color: #c22f65;
+    font-size: 20px;
+}
+
+.procedimento p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #c22f65;
+    font-size: 18px;
+}
+
+  
+  
+  /* Rodapé */
+  footer {
+    background-color: #f8bbd0;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    font-size: 14px;
+    color: #880e4f;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+      font-size: 20px;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    .procedimento {
+      margin: 1.5rem auto;
+    }
+  }
+  
+  /*Contato
+  /* Reset e Configurações Gerais */
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  
+  /* Corpo */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #f8bbd0;
+    padding: 2rem;
+    text-align: center;
+    color: #880e4f;
+  }
+  
+  header img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  
+  /* Navegação */
+  nav {
+    background-color: #f8bbd0;
+    text-align: center;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #880e4f;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  nav a:hover {
+    color: #c2185b;
+    border-bottom: 2px solid #c2185b;
+  }
+  
+  /* Main */
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Formulário de Contato */
+  section {
+    background-color: #fce4ec;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  section h2 {
+    color: #c22f65;
+    margin-bottom: 1.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  label {
+    margin-top: 1rem;
+    color: #880e4f;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #880e4f;
+  }
+  
+  /* Mensagem de sucesso */
+  #mensagem-sucesso {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+    display: none;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #f8bbd0;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+  }
+  
+  footer p, footer a {
+    color: #880e4f;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+      font-size: 20px;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  
+    section {
+      padding: 1.5rem;
+    }
+  }
+  
+  
