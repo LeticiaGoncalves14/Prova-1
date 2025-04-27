@@ -40,9 +40,9 @@ main {
     color: #c22f65;
   }
   .logo {
-    width: 10000px; /* Ajuste conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: 0 auto; /* Centraliza a logo */
+    width: 10000px; 
+    height: auto; 
+    margin: 0 auto; 
 }
   
   
@@ -88,33 +88,33 @@ main {
   }
   /* Seção de Procedimentos */
 section h2 {
-    color: #c22f65; /* Garante que o título dentro da seção seja rosa */
+    color: #c22f65; 
 }
 
 /* Títulos dos Cards */
 .procedimento h3 {
-    color: #c22f65; /* Título dos cards com cor específica */
+    color: #c22f65; 
 }
 /* Ajuste global para títulos */
 h1, h2, h3, h4, h5, h6, p {
-    color: #c22f65; /* Cor padrão para títulos */
-    margin-bottom: 1rem; /* Espaçamento consistente */
-    font-weight: bold; /* Deixa os títulos em destaque */
+    color: #c22f65; 
+    margin-bottom: 1rem; 
+    font-weight: bold; 
 }
 
-/* Estilo específico para cada título, se necessário */
+
 h1 {
-    font-size: 2rem; /* Tamanho maior para o título principal */
-    text-align: center; /* Centraliza os títulos principais */
+    font-size: 2rem; 
+    text-align: center; 
 }
 
 h2 {
-    font-size: 1.75rem; /* Tamanho intermediário */
+    font-size: 1.75rem; 
     text-align: center;
 }
 
 h3 {
-    font-size: 1.5rem; /* Títulos menores */
+    font-size: 1.5rem; 
     text-align: center;
 }
 
@@ -195,11 +195,11 @@ h3 {
 
 section {
     background-color: #fce4ec; /* Fundo rosa */
-    padding: 2rem 1rem; /* Espaçamento ajustado para cobrir a área */
-    border-radius: 20px; /* Cantos arredondados */
+    padding: 2rem 1rem; 
+    border-radius: 20px; 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Centraliza e ajusta a largura */
-    max-width: 1200px; /* Limita o tamanho máximo */
+    width: 90%; 
+    max-width: 1200px; 
     margin: 2rem auto;
     text-align: center;
 }
@@ -213,7 +213,7 @@ section h2 {
 
 /* Cartões dos Procedimentos */
 .procedimento {
-    background-color: #fff0f5; /* Fundo dos cards */
+    background-color: #fff0f5; 
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 20px; /* Ajuste nos cantos */
@@ -225,7 +225,7 @@ section h2 {
 
 /* Imagens dos Procedimentos */
 .procedimento img {
-    width: 100%; /* Imagem ocupa 100% da largura do card */
+    width: 100%; 
     border-radius: 10px;
 }
 
